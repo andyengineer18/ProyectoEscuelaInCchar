@@ -13,5 +13,15 @@ namespace CorEscuela.Entidades
             set { nombre = value; }
         }
         public int AñoDeCreacion { get; set; }
+        public string Pais { get; set; }
+        public string Ciudad { get; set; }
+        public TiposEscuela TipoEscuela { get; set; }
+
+        public Escuela(String nombre, string ciudad) => (Nombre, Ciudad) = (nombre, ciudad);
+
+        public override string ToString()
+        {
+            return $"Nombre: {Nombre}, Tipo: {TipoEscuela}, \nPais: {Pais}, Ciudad: {Ciudad}";
+        }
     }
 }
