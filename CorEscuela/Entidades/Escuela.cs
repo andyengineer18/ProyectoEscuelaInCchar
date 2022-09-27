@@ -18,6 +18,7 @@ namespace CorEscuela.Entidades
         public TiposEscuela TipoEscuela { get; set; }
         public Curso[] cursos { get; set; }
 
+        
         public Escuela(String nombre, string ciudad) => (Nombre, Ciudad) = (nombre, ciudad);
         public Escuela(string nombre, int añoDeCreacion, TiposEscuela tipoEscuela,
                         string pais = "", string ciudad="") //colocar "" significa que es opcional
@@ -34,6 +35,7 @@ namespace CorEscuela.Entidades
             //  esto -> \"  se utiliza para colocar en el texto comillas
             return $"Nombre: \"{Nombre}\", AñoCreacion: {AñoDeCreacion}, Tipo: {TipoEscuela}," +
                     $" \nPais: {Pais}, Ciudad: {Ciudad}";
+
         }
     }
 }
