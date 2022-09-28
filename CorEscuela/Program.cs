@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using CorEscuela.Entidades;
+using CorEscuela.Util;
 using static System.Console;
 namespace CorEscuela
 {   
@@ -72,10 +73,8 @@ namespace CorEscuela
         }
 
         private static void ImprimirCursosEscuela(Escuela escuela)
-        {   
-            WriteLine("===============");
-            WriteLine("Cursos de la Escuela");
-            WriteLine("===============");
+        {
+            Printer.WriteTitle("Cursos de la escuela:");
 
             if (escuela.cursos != null && escuela!=null) // es igual escuela?.cursos !=null
             {
