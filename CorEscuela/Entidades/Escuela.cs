@@ -16,8 +16,8 @@ namespace CorEscuela.Entidades
         public string Pais { get; set; }
         public string Ciudad { get; set; }
         public TiposEscuela TipoEscuela { get; set; }
-        public Curso[] cursos { get; set; }
-
+        //public Curso[] cursos { get; set; }
+        public List<Curso> cursos { get; set;  }
         
         public Escuela(String nombre, string ciudad) => (Nombre, Ciudad) = (nombre, ciudad);
         public Escuela(string nombre, int añoDeCreacion, TiposEscuela tipoEscuela,
