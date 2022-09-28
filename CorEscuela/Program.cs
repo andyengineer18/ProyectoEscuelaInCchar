@@ -8,7 +8,7 @@ namespace CorEscuela
     
     internal class Program 
     {
-        static void Main(string[] args)
+        static void Prueba()
         {
             var escuela = new Escuela("Nazareno", 2000, TiposEscuela.Secundaria,
                     pais: "Mexico", ciudad: "SJm"
