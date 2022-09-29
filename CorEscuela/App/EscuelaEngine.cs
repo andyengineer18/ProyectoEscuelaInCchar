@@ -41,7 +41,7 @@ namespace CorEscuela.App
                         for (int i = 0; i < 5; i++)
                         {
                             var nota = rnd.NextDouble()*(5.0)+(0.0);
-                            var eva =new Evaluaciones
+                            Evaluaciones eva =new Evaluaciones
                             {
                                 Alumno = alumno,
                                 Asignatura = asignatura,

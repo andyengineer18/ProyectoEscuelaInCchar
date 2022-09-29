@@ -8,7 +8,7 @@ namespace CorEscuela.Entidades
     {
         public string UniqueId { get; set; }    
         public string Nombre { get; set; }
-        public List<Evaluaciones> Evaluaciones { get; set; }
+        public List<Evaluaciones> Evaluaciones { get; set; } = new List<Evaluaciones>();
 
         public Alumno()=>UniqueId= Guid.NewGuid().ToString();   
         public Alumno(string id,string nombre) =>(UniqueId,Nombre)=(id,nombre);
